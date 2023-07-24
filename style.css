@@ -1,0 +1,243 @@
+
+body{
+    /* display: flex; */
+    /* justify-content: center; */
+    /* min-height: 100vh; */
+    /* position: relative; */
+    /* background: url(images/logo-uvci.PNG); */
+    /* background:url(images/ala.png)no-repeat ; */
+}
+
+
+
+*{
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'poppins',sans-serif ;
+    background-color: rgba(34, 240, 137, 0.02);
+    overflow: hidden; 
+}
+
+header{
+    position: fixed;
+    top:0;
+    width: 100%;
+    padding: 3rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    background-color: rgb(169 33 143);
+}
+
+.logo-allakro{
+    margin-left:2rem ;
+    position: absolute;
+    left: 6%;  
+}
+
+.logo-allakro a img{
+    width: 6.5%;
+    border-radius: 100%;
+}
+.navigation{
+    text-align: right;
+    position: absolute ;
+    right: 10%;
+}
+.navigation a{
+    position: relative;
+    font-size: 1.1rem;
+    color: rgb(248, 239, 239);
+    text-decoration: none;
+    font-weight: bold;
+    margin-left:2rem;
+}
+
+.navigation a::after{
+    content: '';
+    position: absolute;
+    left:0;
+    bottom: -6px;
+    width: 100%;
+    height: 0.2rem;
+    background: #fff;
+    border-radius: 2rem;
+    transform-origin: left;
+    transform: scaleX(0);
+    transition:  .5s;
+}
+
+.navigation a:hover::after{
+    transform: scaleX(1);
+    transform-origin: right;
+    
+}
+
+
+
+.navigation .bt-conexion{
+    width: 6rem;
+    height: 3rem;
+    background: transparent ;
+    border: 0.1rem solid rgba(252, 252, 255, 0.925);
+    outline: none;
+    border-radius: 1rem;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: rgb(246, 246, 252);
+    margin-left: 2rem;
+    transition: 0.5s ;
+}
+
+.navigation .bt-conexion:hover{
+    background-color:rgba(252, 252, 255, 0.925);
+    color:rgb(169 33 143)
+}
+
+
+ 
+.banniere{
+    position: relative;
+    /* width: 50%; */
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(images/font1.jpg);
+    background-size: cover;
+    padding: 340px;
+}
+.cadre{
+    background-color: gb(169 33 143);
+    position: absolute;
+    width: 30%;
+}
+   
+.registre1{
+    position:relative ;
+    width: 25rem;
+    height: 25rem;
+    background: transparent;
+    border: 2px solid rgb(250, 237, 248);
+    border-radius: 1rem;
+    backdrop-filter: blur(1rem); /*pour rentre transparent */
+    box-shadow: 1rem 1rem 3rem black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    
+}
+.registre1 .form-conexion{
+width: 100%;
+padding: 2rem;
+}
+
+.form-conexion h2{
+    font-size: 2rem;
+    color: black;
+    text-align: center;   
+}
+.input-box{
+    position: relative;
+    width: 100%;
+    height: 50%;
+    border-bottom: 0.1rem solid black;
+    margin: 30px 0  ;
+    padding-bottom:1rem ;
+}
+
+.input-box label{
+position: absolute;
+top: 50%;
+left: 5px;
+transform: translateY(-90%);
+font-size: 1rem;
+color:black;
+font-weight: 500;
+pointer-events: none;
+transition: .6S;
+}
+/* revoire */
+.input-box input:focus~label,
+.input-box input:valid~label {
+    top: -5px;
+}
+
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+   border: none;
+   outline: none;
+   font-size: 1em;
+   color: black;
+   font-size: 600;
+   padding: 0 30px 0 30px;
+}
+.input-box .icon{
+    position: absolute;
+    left: 90%;
+    font-size: 1.2rem;
+    color: black;
+    line-height: 30px;
+}
+.souvenir-pass{
+    font-size: .8rem;
+    color: black;
+    font-weight:500;
+    margin: -17px 0 17px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.souvenir-pass label input{
+    accent-color: rgb(169 33 143);
+    margin-right: 0.05rem;
+}
+
+.souvenir-pass a{
+    text-decoration: none; 
+    position: absolute; 
+    right: -60%;
+}
+
+.souvenir-pass a:hover{
+    text-decoration: underline;
+}
+
+.btn-envoie{
+    width: 100%;
+   background: rgb(41, 27, 27);
+   border: none;
+   outline: none;
+   border-radius: 1rem;
+   cursor: pointer;
+   font-size: 1rem;
+   color: #fff;
+   font-weight: 500; 
+}
+
+.btn-inscription{
+    font-size: 1rem;
+    color: black;
+    text-align: center;
+    font-weight: 500;
+    margin: 1.3rem 0 0.5rem;
+}
+
+.btn-inscription p a{
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.btn-inscription p a:hover{
+    text-decoration: underline;
+    text-transform:uppercase;
+}
+
